@@ -12,19 +12,20 @@ class SignInForm extends Component {
             <Field 
             className='sign-in-form__email' 
             type='email' 
-            title='email' 
-            placeholder='email' 
+            title='Email' 
+            placeholder='Email' 
             name='email' 
             component={FormInput}
             />            
             <Field 
             className='sign-in-form__password' 
             type='password' 
-            title='password' 
-            placeholder='password' 
+            title='Password' 
+            placeholder='Password' 
             name='password' 
             component={FormInput}
             />
+            <div className='sign-in-form__line'></div>
             <Field 
             className='sign-in-form__login'
             onClick={() => console.log('Trying to submit')} 
