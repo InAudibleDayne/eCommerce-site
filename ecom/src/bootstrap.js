@@ -6,7 +6,7 @@ import { Router, Route, Switch } from "react-router-dom";
 
 import reducers from "./reducers";
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const createStoreWithMiddleware = applyMiddleware()(compose((window.devToolsExtension ? window.devToolsExtension() : f => f)(createStore)));
 
 import "./style/main.scss";
 
@@ -14,7 +14,7 @@ import history from './history';
 
 import Layout from "./components/layout";
 import SignIn from './components/auth/signin';
-import SignUp from './components/auth/signup'
+import SignUp from './components/auth/signup';
 
 function main() {
   ReactDOM.render(
@@ -23,6 +23,8 @@ function main() {
         <Layout>
           <Switch>
             <Route path='/' exact component={SignIn} />
+            <Route path='/signin' exact component={SignIn} />
+            <Route path='/signup' exact component={SignUp} />
           </Switch>
         </Layout>
       </Router>
