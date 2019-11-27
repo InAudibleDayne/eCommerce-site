@@ -12,15 +12,15 @@ class SignUpForm extends Component {
     const { className, handleSubmit } = this.props;
     const info = [
       {
-        _id: 0,
+        __id: 0,
         title: 'At least 6 characters',
       },
       {
-        _id: 1,
+        __id: 1,
         title: 'At least 1 number',
       },
       {
-        _id: 2,
+        __id: 2,
         title: 'At least one symbol',
       }
     ]
