@@ -5,22 +5,25 @@ import {
 } from './types';
 
 export function setHeaderLinks(links) {
-    return({
+    return ({
         type: SET_HEADER_LINKS,
         payload: links
     })
 }
 
-export function setNavbarLinks(links) {
-    return({
+export function setNavbarLinks(links, onClick) {
+    return ({
         type: SET_NAVBAR_LINKS,
-        payload: links
+        payload: {
+            links,
+            onClick: onClick ? onClick : ''
+        }
     })
 }
 
-export function changeNavbarActive(id) {
-    return({
+export function changeNavbarActive(_id) {
+    return ({
         type: CHANGE_NAVBAR_ACTIVE,
-        payload: id
+        payload: _id
     })
 }
