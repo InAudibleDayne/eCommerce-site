@@ -1,4 +1,5 @@
 
+
 html {
     font-size: 62.5%;
 }
@@ -12,22 +13,34 @@ html {
 }
 
 body {
-    font-family: "Open sans";
+    font-family: "Open Sans";
     color: #808080;
 }
 
-@import '/layout.scss';
-@import '/headernavbar.scss';
-@import 'auth/signin.scss';
-@import 'auth/signup.scss';
-@import '/page-title.scss';
-@import '/form-fields.scss';
+
+@import 'layout';
+@import 'headernavbar';
+@import 'page-title';
+@import 'form-fields';
 @import 'details';
-@import 'account/purchase-history.scss';
-@import 'account/account-information.scss';
-@import 'account/account.scss';
-@import 'shop/shop.scss';
-@import 'shop/shop-search-bar.scss';
-@import 'shop/shop-product.scss';
-@import 'quantity.scss';
-@import 'green-price-tag.scss';
+
+// AUTH 
+@import 'auth/signin';
+@import 'auth/signup';
+
+// ACCOUNT
+@import 'account/account';
+@import 'account/purchase-history';
+@import 'account/account-information';
+
+// SHOP
+@import 'shop/shop';
+@import 'shop/shop-search-bar';
+@import 'shop/shop-product';
+
+// CART
+@import 'shop/shop-cart';
+
+// QUANTITY
+@import 'quantity';
+@import 'green-price-tag';
