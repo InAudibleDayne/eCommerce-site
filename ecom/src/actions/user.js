@@ -121,7 +121,7 @@ export function fetchCartProducts() {
             },
             {
                 _id: 1,
-                Product: {
+                product: {
                     _id: 1,
                     title: 'Graph Database',
                     description: 'lorem ipsum',
