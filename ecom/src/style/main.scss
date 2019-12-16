@@ -51,7 +51,11 @@ body {
 @import 'quantity';
 @import 'green-price-tag';
 
-// Review
+// REVIEW
 @import './order/review.scss';
 @import './order/reviewForm.scss';
 @import './order/reviewProduct.scss';
+
+// INFORMATION
+@import './information/payment.scss';
+@import './information/shipping.scss';
