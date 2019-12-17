@@ -1,5 +1,6 @@
-.cart-product{
+.cart-product {
     height: 130px;
+
     display: grid;
     grid-template-rows: [s] 1fr [m] 1fr [e];
     grid-template-columns: [s image-s] 130px [image-e] 34px [title-s quantity-s] 1fr [quantity-e] 20px [remove-s] 1fr [remove-e title-e price-s] 70px [price-e e];
@@ -13,9 +14,10 @@
         grid-row: s/m;
         grid-column: title-s/title-e;
         align-self: start;
-        font-family: 'Encode Sans Condensed';
+
         font-size: 18px;
-        color: #E6E6E6;
+        font-family: 'Encode Sans Condensed';
+        color: #e6e6e6;
     }
     &__quantity {
         grid-row: m/e;
@@ -28,14 +30,13 @@
         grid-row: m/e;
         grid-column: remove-s/remove-e;
         justify-self: start;
-        font-size: 15px;
-        text-decoration: underline;
 
+        font-size: 14px;
+        text-decoration-line: underline;
     }
     &__price {
         align-self: center;
         grid-row: m/e;
         grid-column: price-s/price-e;
-
     }
 }

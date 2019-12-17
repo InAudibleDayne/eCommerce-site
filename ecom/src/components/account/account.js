@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 
-import * as actions from '../../actions';
 import { connect } from 'react-redux';
+import * as actions from '../../actions';
+
 import AccountInformation from './accountInformation';
 import PurchaseHistory from './purchaseHistory';
 
@@ -41,7 +42,6 @@ class Account extends Component {
         this.props.setNavbarLinks(navbarLinks);
     }
 
-
     renderContent() {
         let jsx;
         if(this.props.navbarLinks) {
@@ -53,13 +53,14 @@ class Account extends Component {
         }
         return jsx;
     }
-  render() {
-    return (
-        <div className='account'>
-            { this.renderContent() }
-        </div>
-    );
-  }
+
+    render() {
+        return (
+            <div className='account'>
+                { this.renderContent() }
+            </div>
+        )
+    }
 }
 
 function mapStateToProps(state) {

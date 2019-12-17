@@ -1,6 +1,7 @@
 .payment {
-    grid-row: content-s/content-e;
+    grid-row: content-s/content-;
     grid-column: s/e;
+
     &__form {
         display: grid;
         grid-template-rows: [name-s] 64px [name-e card-s] 64px [card-e expiration-ccv-s] 64px [expiration-ccv-e] minmax(20px, 81px) [line-s] 26px [line-e buttons-s] 38px [buttons-e];
@@ -27,6 +28,7 @@
     &__ccv {
         transform: translateX(226px);
     }
+
     &__line {
         grid-row: line-s/line-e;
         grid-column: 1/-1;
@@ -41,32 +43,32 @@
         grid-row: buttons-s/buttons-e;
         grid-column: pay-complete-s/pay-complete-e;
     }
-    &__order-summary  {
+    &__order-summary {
         grid-row: name-s;
-        grid-column: pay-complete-e/-1;
+        grid-column: pay-complete-s/-1;
         justify-self: end;
     }
     &__shipping-info {
         grid-row: name-s;
-        grid-column: pay-complete-e/-1;
+        grid-column: pay-complete-s/-1;
         justify-self: end;
-        transform: translateY(150px)
+        transform: translateY(150px);
     }
 }
 
-.small-text{
-    font-size: 14px;
-}
+
+.small-text { font-size: 14px; }
 
 .shipping-info {
     width: 240px;
     height: 150px;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 30px 24px 24px;
     grid-row-gap: 5px;
 
-    &>* {
+    & > * {
         grid-column: 1/-1;
     }
     &__title {
@@ -75,7 +77,7 @@
     &__name {
 
     }
-    &__address{
+    &__address {
 
     }
 }

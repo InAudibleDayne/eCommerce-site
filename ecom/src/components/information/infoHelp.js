@@ -5,7 +5,7 @@ export function UnderlinedTitle({ className, title }) {
         <div className={`${className} underlined-title`}>
             {title}
         </div>
-    );
+    )
 }
 
 export function InfoTitle({ className, title, value }) {
@@ -18,5 +18,6 @@ export function InfoTitle({ className, title, value }) {
                 {value}
             </div>
         </div>
-    );
+    )
 }
+

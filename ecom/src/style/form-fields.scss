@@ -2,7 +2,7 @@
     display: grid;
     grid-gap: 6.5px;
 
-    &>* {
+    & > * {
         padding-left: 20px;
     }
 
@@ -15,7 +15,7 @@
         width: 426px;
         border: 1px solid #E6E6E6;
         border-radius: 20px;
-        color: #333;
+        color: #333333;
         font-size: 18px;
     }
 }
@@ -26,6 +26,7 @@
         width: 243px;
         border-radius: 20px;
         background-color: #00CB79;
+
         font-size: 16px;
         color: white;
 
@@ -39,18 +40,18 @@
         width: 137px;
     }
 
-
 }
 
 .form-button-long-gray {
     display: grid;
     grid-gap: 6.5px;
-
+    
     &__button {
         height: 38px;
         width: 243px;
         border-radius: 20px;
         background-color: #999;
+
         font-size: 16px;
         color: white;
 
@@ -60,7 +61,7 @@
     }
 
     &__label {
-        font-size: 14px;
         padding-left: 20px;
+        font-size: 14px;
     }
 }
